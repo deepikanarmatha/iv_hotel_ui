@@ -55,14 +55,12 @@ class _HotelDetailScreenState extends State<HotelDetailScreen> {
 
             Divider(),
             foodmenu(),
-            // Facilities
-
 
 
             Image.asset("lib/assets/images/map_background.png"),
 
             payment(),
-            // Price and Booking Button
+
 
           ],
         ),
@@ -196,7 +194,7 @@ class _HotelDetailScreenState extends State<HotelDetailScreen> {
 Widget image(){
     return   Stack(
       children: [
-        // Hotel Image
+
         Image.asset(
           widget.hotel.imageUrl,
           width: double.infinity,
@@ -223,7 +221,7 @@ Widget image(){
                     size: 40,
                   ),
                   const SizedBox(width: 8),
-                  // Space between the icon and name
+
                   Text(
                     widget.hotel.name,
                     style: const TextStyle(
@@ -242,7 +240,7 @@ Widget image(){
                 ],
               ),
               const SizedBox(height: 4),
-              // Add space between the hotel name and location
+
 
             ],
           ),
@@ -260,7 +258,7 @@ Widget image(){
               ),
               Text(
                 widget.hotel.location,
-                // Display location beneath the hotel name
+
                 style: const TextStyle(
                   fontSize: 13,
                   color: Colors.white,
@@ -294,7 +292,7 @@ Widget image(){
               ),
               Text(
                 "85/100 people liked this",
-                // Display location beneath the hotel name
+
                 style: const TextStyle(
                   fontSize: 14,
                   color: Colors.white,
@@ -312,7 +310,6 @@ Widget image(){
         ),
 
 
-        // Share Button - Positioned on top-right corner
         Positioned(
           top: 8,
           right: 8,
@@ -593,9 +590,9 @@ Widget foodmenu(){
             ],
           ),
          SizedBox(height: 16),
-          // Horizontal ListView
+
           Container(
-            height: 130, // Height of the horizontal list
+            height: 130,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: foodItems.length,
@@ -606,10 +603,10 @@ Widget foodmenu(){
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(16.0), // Add border radius here
+                        borderRadius: BorderRadius.circular(16.0),
                         child: Image.asset(
                           foodItems[index]["image"]!,
-                          width: 80, // Adjust size of the image
+                          width: 80,
                           height: 80,
                           fit: BoxFit.cover,
                         ),
@@ -649,21 +646,21 @@ Widget payment(){
                 child: Row(
                   children: [
                     Text(
-                      "\$150", // Original price
+                      "\$150",
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
-                        color: Colors.grey, // Light color for original price
-                        decoration: TextDecoration.lineThrough, // Strikethrough for original price
+                        color: Colors.grey,
+                        decoration: TextDecoration.lineThrough,
                       ),
                     ),
-                    SizedBox(width: 8), // Space between the prices
+                    SizedBox(width: 8),
                     Text(
-                      "\$127", // Discounted price
+                      "\$127",
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
-                        color: Colors.green, // Color for the discounted price
+                        color: Colors.green,
                       ),
                     ),
                     SizedBox(width: 8),
@@ -674,10 +671,10 @@ Widget payment(){
               Column(
                 children: [
                   Text(
-                    "avg/night", // Average night text
+                    "avg/night",
                     style: TextStyle(
                       fontSize: 16,
-                      color: Colors.black54, // Lighter color for the "avg/night" text
+                      color: Colors.black54,
                     ),
                   ),
                 ],

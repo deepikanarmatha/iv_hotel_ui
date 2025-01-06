@@ -84,7 +84,7 @@ class _REGISTER_SCREENState extends State<REGISTER_SCREEN> {
                         ),
 
                         const SizedBox(height: 10),
-                        // Email Field
+
                         TextFormField(
                           controller: _emailController,
                           validator: (value) {
@@ -143,7 +143,7 @@ class _REGISTER_SCREENState extends State<REGISTER_SCREEN> {
 
 
                         const SizedBox(height: 10),
-                        // Password Field
+
                         TextFormField(
                           controller: _passwordController,
                           validator: (value) {
@@ -166,7 +166,7 @@ class _REGISTER_SCREENState extends State<REGISTER_SCREEN> {
 
                         ),
                         const SizedBox(height: 30),
-                        // Create Account Button
+
                         Container( width: double.infinity,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8),

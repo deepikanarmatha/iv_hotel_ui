@@ -117,7 +117,7 @@ class _HOTEL_LIST_VIEWState extends State<HOTEL_LIST_VIEW> {
 
                 return GestureDetector(
                   onTap: () {
-                    // Navigate to the HotelDetailScreen and pass the selected hotel
+
                     Navigator.push(
                       context,
                       MaterialPageRoute(

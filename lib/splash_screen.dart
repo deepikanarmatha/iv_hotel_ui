@@ -10,7 +10,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // Navigate to the LoginScreen after 3 seconds
+  
     Future.delayed(Duration(seconds: 5), () {
       Navigator.pushReplacement(
         context,
@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
           image: DecorationImage(
             image: AssetImage('lib/assets/images/splash_background.jpg'),
 
-            fit: BoxFit.cover, // Ensures the image covers the entire screen
+            fit: BoxFit.cover,
           ),
         ),
         child: Center(
