@@ -196,7 +196,7 @@ class _REGISTER_SCREENState extends State<REGISTER_SCREEN> {
                         ),
 
                         const SizedBox(height: 60),
-                        // Social Media Sign-In
+
                         const Text(
                           "or sign in using",
                           style: TextStyle(color: Colors.grey),

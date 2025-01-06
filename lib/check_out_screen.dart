@@ -28,7 +28,7 @@ class _CHECK_OUT_SCREENState extends State<CHECK_OUT_SCREEN> {
 
           ],
         ),
-      //  backgroundColor: Colors.blue, // Customize AppBar color if needed
+      //  backgroundColor: Colors.blue,
       ),
       body:SingleChildScrollView(
         child: Column(
@@ -96,7 +96,7 @@ class _CHECK_OUT_SCREENState extends State<CHECK_OUT_SCREEN> {
         child: Center(
           child: TextButton(
             onPressed: () {
-              // Navigate to payment screen or perform action
+
               print("Proceed to Payment");
             },
             child: Text(

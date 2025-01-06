@@ -13,7 +13,7 @@ class BottomNavigation extends StatefulWidget {
 class _BottomNavigationState extends State<BottomNavigation> {
   int _selectedIndex = 0;
 
-  // List of pages to display based on the selected tab
+
   final List<Widget> _pages = [
     HOTEL_LIST_VIEW(),
     const Center(child: Text('Car Booking')),
@@ -22,7 +22,6 @@ class _BottomNavigationState extends State<BottomNavigation> {
     Settings(),
   ];
 
-  // Function to update the selected index
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
@@ -33,22 +32,22 @@ class _BottomNavigationState extends State<BottomNavigation> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      body: _pages[_selectedIndex], // Show the selected page
+      body: _pages[_selectedIndex],
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Colors.blue, Colors.greenAccent], // Gradient colors
+            colors: [Colors.blue, Colors.greenAccent],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
         ),
         child: BottomNavigationBar(
           currentIndex: _selectedIndex,
-          onTap: _onItemTapped, // Handle tap event
+          onTap: _onItemTapped,
           type: BottomNavigationBarType.fixed,
-          selectedItemColor: Colors.white, // Selected item color
-          unselectedItemColor: Colors.black, // Unselected item color
-          backgroundColor: Colors.transparent, // Transparent background
+          selectedItemColor: Colors.white,
+          unselectedItemColor: Colors.black,
+          backgroundColor: Colors.transparent,
           items: [
             BottomNavigationBarItem(
               icon: ColorFiltered(

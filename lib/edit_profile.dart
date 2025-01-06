@@ -20,9 +20,9 @@ class _EDIT_PROFILEState extends State<EDIT_PROFILE> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Icon(
-              Icons.arrow_forward_ios, // Arrow icon
-              size: 20, // Adjust size as needed
-              //color: Colors.white, // Adjust color as needed
+              Icons.arrow_forward_ios,
+              size: 20,
+              //color: Colors.white,
             ),
             SizedBox(width: 10,),
             Text(
@@ -32,7 +32,7 @@ class _EDIT_PROFILEState extends State<EDIT_PROFILE> {
 
           ],
         ),
-        //  backgroundColor: Colors.blue, // Customize AppBar color if needed
+
       ),
       body:  Padding(
         padding: const EdgeInsets.all(16.0),
@@ -46,21 +46,21 @@ class _EDIT_PROFILEState extends State<EDIT_PROFILE> {
 
           Center(
             child: Stack(
-              alignment: Alignment.center, // Align items in the center of the stack
+              alignment: Alignment.center,
               children: [
-                // Profile image in oval shape
+
                 Opacity(
-                  opacity: 0.3, // Set opacity (0.0 to 1.0, where 0.0 is fully transparent and 1.0 is fully opaque)
+                  opacity: 0.3,
                   child: ClipOval(
                     child: Image.asset(
-                      "lib/assets/images/profile_images.jpg", // Your profile image
-                      width: 150, // Width of the profile image
-                      height: 150, // Height of the profile image
+                      "lib/assets/images/profile_images.jpg",
+                      width: 150,
+                      height: 150,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
-                // Camera icon overlaid at the center of the profile image
+
                 Positioned(
                   child: Image.asset("lib/assets/images/camera.png"),
                 ),
