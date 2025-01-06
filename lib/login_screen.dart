@@ -72,9 +72,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             if (value == null || value.isEmpty) {
                               return "Please enter your email";
                             }
-                            if (!RegExp(r'\S+@\S+\.\S+').hasMatch(value)) {
-                              return "Please enter a valid email";
-                            }
+
                             return null;
                           },
                           decoration: const InputDecoration(

@@ -401,7 +401,7 @@ Widget hotel_details(){
               ),
               Text(
                 widget.hotel.location,
-                // Display location beneath the hotel name
+
                 style: const TextStyle(
                   fontSize: 16,
                   //color: Colors.blue,
@@ -419,7 +419,7 @@ Widget hotel_details(){
               ),
               Text(
                 widget.hotel.contact,
-                // Display location beneath the hotel name
+
                 style: const TextStyle(
                   fontSize: 16,
                   //color: Colors.white,
@@ -556,14 +556,14 @@ Widget checkavailability(){
               child: Row(
                 children: [
                   Image.asset("lib/assets/images/adults.png", width: 30, height: 30),  // Adjust image size
-                  SizedBox(width: 8), // Space between the image and the text
+                  SizedBox(width: 8),
                   Text("0 Adults.", style: TextStyle(fontSize: 16)),
                   SizedBox(width: 15,),
                   Text("0 Children.", style: TextStyle(fontSize: 16)),
                   SizedBox(width: 15,),
                   Text("0 room", style: TextStyle(fontSize: 16)),
 
-                  Spacer(), // Pushes the icon to the right
+                  Spacer(),
                   Icon(Icons.keyboard_arrow_down_outlined, size: 30),
                 ],
               ),
@@ -622,16 +622,10 @@ Widget foodmenu(){
               },
             ),
           ),
-
-
-
-
         ],
       ),
     );
 }
-
-
 Widget payment(){
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
